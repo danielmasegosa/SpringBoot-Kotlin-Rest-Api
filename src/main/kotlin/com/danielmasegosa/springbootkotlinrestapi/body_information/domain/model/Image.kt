@@ -1,3 +1,3 @@
 package com.danielmasegosa.springbootkotlinrestapi.domain.model
 
-data class Weight(val value: Double)
+data class Image(private val url: Url)

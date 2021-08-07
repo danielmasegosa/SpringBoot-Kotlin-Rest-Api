@@ -1,3 +1,3 @@
 package com.danielmasegosa.springbootkotlinrestapi.domain.model
 
-data class ArmMeasure(val value: Double)
+data class Url(private val value: String)

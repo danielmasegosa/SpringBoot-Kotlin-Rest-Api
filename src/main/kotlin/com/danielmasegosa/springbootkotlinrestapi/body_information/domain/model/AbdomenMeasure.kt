@@ -1,3 +1,3 @@
 package com.danielmasegosa.springbootkotlinrestapi.domain.model
 
-data class HipMeasure(val value: Double)
+data class AbdomenMeasure(private val value: Double)
