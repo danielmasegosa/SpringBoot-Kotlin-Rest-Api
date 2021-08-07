@@ -1,13 +1,15 @@
-package com.danielmasegosa.springbootkotlinrestapi.body_information.domain.save_body_information
+package com.danielmasegosa.springbootkotlinrestapi.body_information.domain
 
 import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.model.*
+import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.save_body_information.SaveBodyInformation
+import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.save_body_information.SaveBodyInformationCommand
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.verify
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.times
 import java.util.*
 
-class SaveMeasuresWeightAndImagesTest {
+class SaveBodyInformationTest {
 
     private val bodyInformationRepository: BodyInformationRepository = mock()
 
