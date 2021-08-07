@@ -1,3 +1,3 @@
-package com.danielmasegosa.springbootkotlinrestapi.domain.model
+package com.danielmasegosa.springbootkotlinrestapi.body_information.domain.model
 
 data class Image(private val url: Url)

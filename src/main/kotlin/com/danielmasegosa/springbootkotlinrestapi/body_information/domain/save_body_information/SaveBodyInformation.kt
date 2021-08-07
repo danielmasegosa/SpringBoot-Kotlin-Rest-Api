@@ -1,6 +1,6 @@
-package com.danielmasegosa.springbootkotlinrestapi.domain
+package com.danielmasegosa.springbootkotlinrestapi.body_information.domain.save_body_information
 
-import com.danielmasegosa.springbootkotlinrestapi.domain.model.*
+import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.model.*
 
 class SaveBodyInformation(private val bodyInformationRepository: BodyInformationRepository) {
 

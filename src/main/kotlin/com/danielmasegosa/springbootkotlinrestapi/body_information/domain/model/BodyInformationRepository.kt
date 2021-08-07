@@ -1,4 +1,4 @@
-package com.danielmasegosa.springbootkotlinrestapi.domain.model
+package com.danielmasegosa.springbootkotlinrestapi.body_information.domain.model
 
 interface BodyInformationRepository {
     fun save(bodyInformation: BodyInformation) {
