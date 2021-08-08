@@ -6,7 +6,6 @@ import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.save_b
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.verify
 import org.mockito.kotlin.mock
-import org.mockito.kotlin.times
 import java.util.*
 
 class SaveBodyInformationTest {
@@ -29,7 +28,7 @@ class SaveBodyInformationTest {
 
         subject.execute(bodyInformationCommand)
 
-        verify(bodyInformationRepository, times(1)).save(
+        verify(bodyInformationRepository).save(
             BodyInformation(
                 id = BodyInformationId(value = UUID.fromString("2fe63fe6-efb9-4529-baf1-67162a8ee5af")),
                 measures = Measures(
