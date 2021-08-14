@@ -1,6 +1,7 @@
 package com.danielmasegosa.springbootkotlinrestapi.body_information.infrastructure.persistence
 
 import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.model.*
+import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.model.persistence.BodyInformationRepository
 import com.danielmasegosa.springbootkotlinrestapi.body_information.infrastructure.persistence.model.BodyInformationEntity
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue
@@ -21,7 +22,7 @@ import java.util.*
 @DataMongoTest
 @Import(MongoDBBodyInformationRepositoryIT.Config::class)
 class MongoDBBodyInformationRepositoryIT {
-    
+
     @SpyBean
     private lateinit var mongoDBRepository: MongoDBBodyInformationRepository
 
@@ -37,7 +38,6 @@ class MongoDBBodyInformationRepositoryIT {
         fun setProperties(registry: DynamicPropertyRegistry) =
             registry.add("spring.data.mongodb.uri", mongoDBContainer::getReplicaSetUrl)
     }
-
 
     @Test
     internal fun `should invoke to the save method with the proper values`() {

@@ -1,7 +1,7 @@
 package com.danielmasegosa.springbootkotlinrestapi.body_information.infrastructure.persistence
 
 import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.model.BodyInformation
-import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.model.BodyInformationRepository
+import com.danielmasegosa.springbootkotlinrestapi.body_information.domain.model.persistence.BodyInformationRepository
 import com.danielmasegosa.springbootkotlinrestapi.body_information.infrastructure.persistence.model.BodyInformationEntity
 import org.springframework.stereotype.Component
 

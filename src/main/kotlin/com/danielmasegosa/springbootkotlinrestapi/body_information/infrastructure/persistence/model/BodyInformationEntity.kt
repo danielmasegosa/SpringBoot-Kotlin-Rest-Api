@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
-@Document
+@Document(value = "body_information")
 data class BodyInformationEntity(
     @Id
     val _id: UUID,
